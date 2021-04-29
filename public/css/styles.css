@@ -1,23 +1,248 @@
-body {background-color: #EAC926 ;}
-header {font-family: 'Roboto', sans-serif;}
-.cuerpos {font-size: 12px;}
-.titulares {font-size: 24px;}
-.precios {font-size: 18px;}
-.descuentos {font-size: 16px;}
-.descripciones {font-size: 16px;}
-header .buscador {
-    padding: 5px 5px;
-    margin: 15px;
-}
-.burger-menu{
-    background: #03264c;
-    color: white;
-    padding: 5px;
-    margin-left: 47%;
-    margin-right: 46%;
-    border-radius: 5px;
-
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+header {
+    background-color: #EAC926;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 50%;
+    margin-right: 10px;
     
- 
+}
+
+header p {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px;
+}
+
+header nav ul {
+    display: none;
+}
+
+section img {
+    max-width: 100%;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.banner-section {
+    background-color: #ebebeb;
+}
+
+.logo-search {
+    display: flex;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container {
+    display:flex; 
+    background-color: #ffffff;
+    border-radius: 5px;
+    align-items: center;
+    width: 50%;
+     }
+
+.buscador {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.lupita {
+    
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding-right: 5px;
+
+}
+
+.fa-search {
+    font-size: 17px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.cuerpos {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+.precios {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-grow: 0.3;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin-top: 0px;
+    flex-grow: 0.7;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descripciones {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+    font-weight: lighter;
+    display: none;
+}
+
+.details {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-truck {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+
+}
+
+header i {
+    background: #1259c3;
+    color: white;
+    padding: 10px;
+    margin-left: 46%;
+    border-radius: 5px;
+    display: block;
+
+}
+
+main {
+    width: 100%;
+    background-color: #ebebeb;
+    margin: auto;
+
+}
+
+main article {
+    max-width: 360px;
+}
+
+main img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
+}
+
+article {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer i {
+    color: #0D5ACA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 361px) {
+    .descripciones {
+        display: block;
+        margin-right: 15%;
+        margin-top: 15px;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header i {
+        display: none !important;
+    }
+
+    .last-visit article {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .offers article {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .titulares {
+        text-align: left;
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    .last-visit article {
+        width: 21%;
+    }
+
+    .offers article {
+        width: 21%;
+    }
+}
